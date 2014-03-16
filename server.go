@@ -12,6 +12,8 @@ func main() {
 	m.Use(martini.Static("public"))
 
 	m.Post(`/new_email`, HandleNewEmail)
+
+	m.Run()
 }
 
 func HandleNewEmail(r *http.Request) int {
