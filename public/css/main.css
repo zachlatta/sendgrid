@@ -1,0 +1,21 @@
+body {
+  background-image: url("../img/doge.jpg");
+  background-size: cover;
+}
+
+.sendgrid {
+  text-align: center;
+  font-family: "Comic Sans MS", "Blackboard", sans-serif;
+  font-size: 48px;
+
+  margin-top: 50px;
+}
+
+.sendgrid a {
+  color: #387cb7;
+}
+
+.wow {
+  font-family: "Comic Sans MS", "Blackboard", sans-serif;
+  position: fixed;
+}
