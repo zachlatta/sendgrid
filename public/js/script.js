@@ -1,4 +1,4 @@
-var socket = new WebSocket('ws://localhost:4000/socket');
+var socket = new WebSocket('ws://hack.zachlatta.com/socket');
 
 socket.onopen = function () {
   console.log('Socket opened.');
