@@ -23,6 +23,7 @@ func main() {
 
 func newMailHandler(w http.ResponseWriter, r *http.Request) int {
 	body := r.FormValue("text")
+	log.Println("Mail received: " + body)
 	for _, conn := range conns {
 		go conn.WriteMessage(1, []byte(body))
 	}
@@ -38,5 +39,7 @@ func socketHandler(w http.ResponseWriter, r *http.Request) {
 	} else if err != nil {
 		log.Println(err)
 	}
+
+	log.Println("WebSocket successfully opened at " + conn.RemoteAddr().String())
 	conns = append(conns, conn)
 }

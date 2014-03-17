@@ -5,7 +5,7 @@ socket.onopen = function () {
 }
 
 socket.onmessage = function (msg) {
-  console.log('Message received.');
+  console.log('Message received: ' + msg);
   docHeight = $(document).innerHeight() * 0.9;
   docWidth = $(document).innerWidth() * 0.9;
   textCol = '#' + Math.floor(Math.random() * 16777215).toString(16);
