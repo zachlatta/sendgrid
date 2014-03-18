@@ -13,7 +13,7 @@ var conns []*websocket.Conn
 func main() {
 	m := martini.Classic()
 
-	m.Use(martini.Static("assets"))
+	m.Use(martini.Static("public"))
 
 	m.Get("/socket", socketHandler)
 	m.Post("/new_mail", newMailHandler)
