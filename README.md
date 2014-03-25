@@ -10,6 +10,12 @@ applications easy.
    with your message as the body.
 3. Watch it appear on the site in real time.
 
+## Sign Up
+
+Sign up for a developer account on SendGrid at http://hack.sendgrid.com.
+
+API docs are available at http://sendgrid.com/docs/API_Reference/.
+
 ## License
 
 The MIT License (MIT)
