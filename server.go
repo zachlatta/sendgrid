@@ -22,7 +22,7 @@ func main() {
 }
 
 func newMailHandler(r *http.Request, log *log.Logger) int {
-	body := r.FormValue("text")
+	body := r.FormValue("subject")
 	log.Println("Mail received: " + body)
 	for _, conn := range conns {
 		go conn.WriteMessage(1, []byte(body))
