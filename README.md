@@ -1,4 +1,4 @@
-# SendGrid
+# SendGrid ![Analytics](https://ga-beacon.appspot.com/UA-34529482-6/sendgrid/readme?pixel)
 
 SendGrid is an API that makes sending and receiving email from your
 applications easy.
